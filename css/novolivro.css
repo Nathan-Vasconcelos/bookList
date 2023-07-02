@@ -1,0 +1,75 @@
+.container-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: 1px solid #2BDEFD;*/
+    margin-bottom: 25px;
+}
+
+#fade{
+    /*.fade*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+}
+
+#adicionar-container{
+    /*.adicionar-container*/
+    /*border: 1px solid #2BDEFD;*/
+    position: fixed;
+    background-color: #fff;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    transition: 0.5s;
+}
+
+.botaoFechar{
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(235, 5, 5);
+}
+
+#adicionar-container.hide,
+#fade.hide{
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+}
+
+.label-adicionar{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 2px;
+}
+
+.input-adicionar{
+    border-radius: 40px 40px 40px 40px;
+    border: 1px solid #212121;
+    padding: 0 4px 0px 16px;
+    width: 80%;
+    height: 45px;
+}
+
+.botao-adicionar{
+    border-radius: 40px;
+    border: none;
+    width: 40%;
+    height: 45px;
+    font-size: 20px;
+    color: #121212;
+    background-color: #ccc;
+    cursor: pointer;
+}
