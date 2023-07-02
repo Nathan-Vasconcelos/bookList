@@ -23,8 +23,32 @@ body{
     font-weight: bold;
 }
 
+.tituloMobile{
+    display: none;
+}
+
+.linkMobile{
+    display: none;
+}
+
 .pesquisa-container{
     display: flex;
+}
+
+.pesquisa-container-mobile{
+    display: none;
+}
+
+.pesquisa-container-mobile input{
+    display: none;
+}
+
+#pesquisa-container-mobile-modal{
+    display: none;
+}
+
+#pesquisa-container-mobile-modal input{
+    display: none;
 }
 
 .barraDePesquisa{
