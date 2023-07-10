@@ -107,3 +107,15 @@ body{
     word-break: break-word;
     font-family: 'Raleway', sans-serif;
 }
+
+p .bi-book{
+    font-size: 20px;
+}
+
+.lerlivro{
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+    border-bottom: 1px solid;
+    margin-bottom: 3px;
+}

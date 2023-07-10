@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="icon/book.svg" type="image/x-icon">
     <title>Book List</title>
 </head>
 <body>
@@ -38,11 +39,13 @@
     <main class="Lista-container" id="listaDeLivros">
         <div class="livro-container">
             <img src="https://img.bertrand.pt/images/sobre-a-brevidade-da-vida-seneca/NDV8Mjc4MzY2MjJ8MjQyMTg0NzV8MTY2Njk2OTQzODAwMA==/500x" alt="capa do livro" class="capaDoLviro">
+            <p  id="lerLivro" class="lerlivro"><i id="icone" class="bi bi-book"></i> Ler</p>
             <p class="tituloDoLivro">A brevidade da vida</p>
             <p class="autorDoLivro">Sêneca</p>
         </div>
         <div class="livro-container">
             <img src="https://img.bertrand.pt/images/sobre-a-brevidade-da-vida-seneca/NDV8Mjc4MzY2MjJ8MjQyMTg0NzV8MTY2Njk2OTQzODAwMA==/500x" alt="capa do livro" class="capaDoLviro">
+            <p  id="lerLivro" class="lerlivro"><i id="icone" class="bi bi-book"></i> Ler</p>
             <p class="tituloDoLivro">A brevidade da vida</p>
             <p class="autorDoLivro">Sêneca</p>
         </div>
@@ -92,8 +95,10 @@
             <button class="botao-adicionar" id="botaoAdicionar">Adicionar</button>
         </div>
     </div>
+    <script type="module" src="js/main.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/adicionarLivro.js"></script>
+    <!--<script src="js/adicionarLivro.js"></script>-->
     <script src="js/pesquisaContainerMobile.js"></script>
+    <script src="js/lerLivro.js"></script>
 </body>
 </html>
