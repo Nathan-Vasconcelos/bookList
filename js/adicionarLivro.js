@@ -20,9 +20,10 @@ export function adicionarLivro(){
     console.log(nomeAutor);*/
     
     const livro = document.createElement("div");
+    livro.id = `livro_${contador}`;
     livro.className = "livro-container";
     livro.innerHTML =`<img src="${capaLivro}" alt="capa do livro" class="capaDoLviro">
-    <p onclick="lerLivro(${contador})" id="lerLivro_${contador}" class="lerlivro"><i id="lerLivroIcone_${contador}" class="bi bi-book"></i> Ler</p>
+    <div class="lerlivro"><p onclick="lerLivro(${contador})" id="lerLivro_${contador}"><i id="lerLivroIcone_${contador}" class="bi bi-book"></i> Ler</p><p onclick="apagarLivro(${contador})"><i class="bi bi-trash"></i> Apagar</p></div>
     <p class="tituloDoLivro">${nomeLivro}</p>
     <p class="autorDoLivro">${nomeAutor}</p>
     `;
@@ -32,3 +33,13 @@ export function adicionarLivro(){
     console.log(contador);
 }
 //botaoAdicionar.addEventListener("click", adicionarLivro);
+/*`<img src="${capaLivro}" alt="capa do livro" class="capaDoLviro">
+    <p onclick="lerLivro(${contador})" id="lerLivro_${contador}" class="lerlivro"><i id="lerLivroIcone_${contador}" class="bi bi-book"></i> Ler</p>
+    <p class="tituloDoLivro">${nomeLivro}</p>
+    <p class="autorDoLivro">${nomeAutor}</p>
+    `;
+
+`<img src="https://img.bertrand.pt/images/sobre-a-brevidade-da-vida-seneca/NDV8Mjc4MzY2MjJ8MjQyMTg0NzV8MTY2Njk2OTQzODAwMA==/500x" alt="capa do livro" class="capaDoLviro">
+<div class="lerlivro"><p id="lerLivro"><i id="icone" class="bi bi-book"></i> Ler</p><p><i class="bi bi-trash"></i> Apagar</p></div>
+<p class="tituloDoLivro">A brevidade da vida</p>
+<p class="autorDoLivro">Sêneca</p>`*/

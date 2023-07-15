@@ -109,13 +109,17 @@ body{
 }
 
 p .bi-book{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .lerlivro{
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     border-bottom: 1px solid;
     margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*color: red;*/
 }
