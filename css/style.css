@@ -123,3 +123,10 @@ p .bi-book{
     align-items: center;
     /*color: red;*/
 }
+
+.mensagemListaVazia{
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    /*color: rgb(235, 5, 5)*/
+}
