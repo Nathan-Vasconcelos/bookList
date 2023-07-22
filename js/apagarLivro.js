@@ -7,4 +7,5 @@ function apagarLivro(id){
     //remover do localStorage
     dataLivros.splice(dataLivros.findIndex(elemento => elemento.id === id), 1);
     localStorage.setItem("livros", JSON.stringify(dataLivros));
+    window.location.reload();
 }

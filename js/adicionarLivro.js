@@ -1,6 +1,3 @@
-//const listaDeLivros = document.getElementById('listaDeLivros');
-//const botaoAdicionar = document.getElementById('botaoAdicionar');
-let contador = 0;
 export function adicionarLivro(dataLivros){
     //console.log("Iniciando função de adicionar livro...");
     
@@ -11,7 +8,7 @@ export function adicionarLivro(dataLivros){
     if(capaLivro == '' || nomeLivro == '' || nomeAutor == ''){
         alert('Preencha todos os campos');
     } else{
-        ++contador;
+        //++contador;
 
         const modal = document.getElementById('adicionar-container');
         const fade = document.getElementById('fade');
@@ -56,18 +53,9 @@ export function adicionarLivro(dataLivros){
         localStorage.setItem("livros", JSON.stringify(dataLivros));
 
         console.log(dataLivros);
-        console.log(contador);
+        //console.log(contador);
         console.log("Finalizando a função de adicionar livro...");
+        //window.location.href = "index.html";
+        window.location.reload();
     }
 }
-//botaoAdicionar.addEventListener("click", adicionarLivro);
-/*`<img src="${capaLivro}" alt="capa do livro" class="capaDoLviro">
-    <p onclick="lerLivro(${contador})" id="lerLivro_${contador}" class="lerlivro"><i id="lerLivroIcone_${contador}" class="bi bi-book"></i> Ler</p>
-    <p class="tituloDoLivro">${nomeLivro}</p>
-    <p class="autorDoLivro">${nomeAutor}</p>
-    `;
-
-`<img src="https://img.bertrand.pt/images/sobre-a-brevidade-da-vida-seneca/NDV8Mjc4MzY2MjJ8MjQyMTg0NzV8MTY2Njk2OTQzODAwMA==/500x" alt="capa do livro" class="capaDoLviro">
-<div class="lerlivro"><p id="lerLivro"><i id="icone" class="bi bi-book"></i> Ler</p><p><i class="bi bi-trash"></i> Apagar</p></div>
-<p class="tituloDoLivro">A brevidade da vida</p>
-<p class="autorDoLivro">Sêneca</p>`*/
